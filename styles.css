@@ -1,0 +1,205 @@
+*{
+	padding:0;
+	margin:0;
+}
+.header{
+height:105px;
+width:100%;	
+}
+.flightattendant{
+height:805px;
+width:100%;
+background-color:orange;
+}
+.textrow{
+	width:100%;
+	max-width:1400px;
+}
+.imagerow{
+height:420px;	
+background-color:red;
+}
+.inflightmenu{
+	height:805px;
+	width:100%;
+	background-color:purple;
+}              
+.wherewefly{
+	height:630px;
+	width:auto;
+	margin-left:140px;
+	margin-right:140px;
+	background-color:white;
+}   
+.flightalerts{
+	height:630px;
+	width:100%;
+	background-color:gray;
+}
+.footer{
+	height:140px;
+	width:100%;
+	background-color:black;
+}
+.footer p{
+	color:white;
+}
+#rightfooter{
+	float:right;
+}
+ul.menu li a{
+	text-decoration: none;
+	color:black;
+}
+ul.menu{
+	list-style: none;
+	display:inline-block;
+	float:right;
+	margin-top:43.5px;
+	margin-right:70px;
+}
+ul.menu li{
+	float:left;
+	padding-left:17.5px;
+	padding-right:17.5px;
+}
+.fontfam{
+	font-family: ariel;
+}
+.logo{
+	width:167px;
+	margin-left:70px;
+	margin-top:30px;
+}
+.footerlogo{
+	width:420px;
+	padding-top:175px;
+}
+#alerts{
+width:525px;
+height:70px;
+background-color:orange;
+margin-top:50px;
+}
+.centerblock{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+#signup{
+	float:left;
+	padding-top:17px;
+	padding-bottom: 17px;
+background-color:black;
+color:white;
+width:210px;
+}
+#youremail{
+	float:right;
+}
+.hometitle{
+	margin-right:140px;
+	margin-left:210px;
+	padding-top:35px;
+	letter-spacing:5px;
+	font-size:38px;
+}
+.hometext{
+	margin-right:140px;
+	margin-left:210px;
+	margin-bottom:70px;
+	max-width:1050px;
+	line-height:35px;
+	letter-spacing:2px;
+}
+.sixty{
+	position: absolute;
+	font-size:260px;
+	margin-left:140px;
+	z-index:-1;
+	color:#F1F2F2;
+	margin-top:-127px;
+}
+.homehr{
+border-style:none;
+height:1px;
+width:105px;
+background-color:#006838;
+margin-top:140px;
+margin-left:210px;
+}
+.flyhr{
+border-style:none;
+height:1px;
+width:105px;
+background-color:#006838;
+margin-top:140px;
+margin-bottom:35px;
+}
+li.store{
+	width:340px!important;
+	height:280px!important;
+	max-height:280px;
+	max-width:350px;
+	background-color:black;
+
+}
+li.storeleft{
+}
+li.storeright{
+}
+li.store h2, li.store p{
+	color:white;
+}
+#whereweflywidth{
+	width:100%;
+	max-width:1120px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+ul#lightSlider.lightSlider.lSSlide.lsGrab{
+	height:230px;
+	padding-top:70px;
+}
+.fly{
+	position:absolute;
+	letter-spacing:5px;
+	font-size:38px;
+}
+li.store.lslide{
+	padding-right:25px;
+	box-sizing: content-box;
+	background-clip:content-box;
+}
+#leftfooter{
+float:left;
+clear:left;
+display:inline-block;	
+}
+.topfooter{
+	margin-top:34px;
+}
+.bottomfooter{
+	clear:right;
+}
+.socialmediaicon{
+	height:18px;
+	width:18px;
+	display:inline-block;
+	float:left;
+}
+.iconone, .icontwo, .iconthree{
+	top:30;
+	position:relative;
+	background-color:white;
+}
+.iconone{
+	left:10;
+}
+.icontwo{
+	left:40;
+}
+.iconthree{
+	left:70;
+}

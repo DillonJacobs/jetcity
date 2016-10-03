@@ -1,0 +1,184 @@
+
+<head>
+
+<link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/styles.css" />                    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/lightslider.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $("#lightSlider").lightSlider({
+    	controls: true,
+    	pager: false,
+    	thumbMargin: 20,
+
+    }); 
+    }); 
+</script>
+<script>
+	$(document).ready(function() {
+  $('.smoothScroll').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-175
+        }, 800); // The number here represents the speed of the scroll in milliseconds
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+<script>
+$(document).ready(function() {
+(function($) {
+    $.fn.countTo = function(options) {
+        // merge the default plugin settings with the custom options
+        options = $.extend({}, $.fn.countTo.defaults, options || {});
+
+        // how many times to update the value, and how much to increment the value on each update
+        var loops = Math.ceil(options.speed / options.refreshInterval),
+            increment = (options.to - options.from) / loops;
+
+        return $(this).each(function() {
+            var _this = this,
+                loopCount = 0,
+                value = options.from,
+                interval = setInterval(updateTimer, options.refreshInterval);
+
+            function updateTimer() {
+                value += increment;
+                loopCount++;
+                $(_this).html(value.toFixed(options.decimals));
+
+                if (typeof(options.onUpdate) == 'function') {
+                    options.onUpdate.call(_this, value);
+                }
+
+                if (loopCount >= loops) {
+                    clearInterval(interval);
+                    value = options.to;
+
+                    if (typeof(options.onComplete) == 'function') {
+                        options.onComplete.call(_this, value);
+                    }
+                }
+            }
+        });
+    };
+
+    $.fn.countTo.defaults = {
+        from: 0,  // the number the element should start at
+        to: 100,  // the number the element should end at
+        speed: 1000,  // how long it should take to count between the target numbers
+        refreshInterval: 100,  // how often the element should be updated
+        decimals: 0,  // the number of decimal places to show
+        onUpdate: null,  // callback method for every time the element is updated,
+        onComplete: null,  // callback method for when the element finishes updating
+    };
+})(jQuery);
+
+jQuery(function($) {
+        $('.timer').countTo({
+            from: 1,
+            to: 60,
+            speed: 500,
+            refreshInterval: 50,
+            onComplete: function(value) {
+                console.debug(this);
+            }
+        });
+    });
+});
+</script>
+
+</head>
+<body>
+
+<div class="header">
+<a href="home.html"><img class="logo" src="jetcitylogo.svg"></a>
+	<ul class="menu">
+		<li><a class="smoothScroll" href="#thecure">THE CURE</a></li>
+		<li><a href="menu.html">IN-FLIGHT MENU</a></li>
+		<li><a class="smoothScroll" href="#where">WHERE WE FLY</a></li>
+		<li><a class="smoothScroll" href="#flightinfo">FLIGHT INFO</a></li>
+	</ul>
+</div>
+<div class="flightattendant"></div>
+<div class="textrow centerblock">
+<p class="sixty timer">60</p>
+<hr class="homehr">
+	<h1 class="hometitle" id="thecure">We're All About The Cure</h1>
+	<p class="hometext">Located in Seattles historic Georgetown neighborhood, in the shadow of Boeing Fields final approach, Jet City Gardens is a family owned micro-batch, premium cannabis cultivator. While other growers schedule takeoff immediately after harvest, we put our products in a holding pattern for sixty days.</p>	
+</div>
+<div class="imagerow"></div>
+<div class="textrow">
+	<hr class="homehr">
+	<h1 class="hometitle">We're all about the cure</h1>
+	<p class="hometext">Located in Seattle’s historic Georgetown neighborhood, in the shadow of Boeing Field’s final approach, Jet City Gardens is a family owned micro-batch, premium cannabis cultivator. While other growers schedule takeoff immediately after harvest, we put our products in a holding pattern for sixty days.</p>	
+</div>
+<div class="imagerow"></div>
+<div class="textrow">
+	<hr class="homehr">
+	<h1 class="hometitle">We're all about the cure</h1>
+	<p class="hometext">Located in Seattle’s historic Georgetown neighborhood, in the shadow of Boeing Field’s final approach, Jet City Gardens is a family owned micro-batch, premium cannabis cultivator. While other growers schedule takeoff immediately after harvest, we put our products in a holding pattern for sixty days.</p>	
+</div>
+<div class="imagerow"></div>
+<div class="textrow">
+	<hr class="homehr">
+	<h1 class="hometitle">We're all about the cure</h1>
+	<p class="hometext">Located in Seattle’s historic Georgetown neighborhood, in the shadow of Boeing Field’s final approach, Jet City Gardens is a family owned micro-batch, premium cannabis cultivator. While other growers schedule takeoff immediately after harvest, we put our products in a holding pattern for sixty days.</p>	
+</div>
+<div class="imagerow"></div>
+<div class="inflightmenu">
+	<h1>In-Flight Menu</h1>
+	<p> VIEW ></p>
+</div>
+<div class="wherewefly" id="where">
+	<div id="whereweflywidth">
+	<hr class="flyhr">
+	<h1 class="fly">Where We Fly</h1>
+		<ul id="lightSlider">
+		  <li class="store leftstore">
+		     <h2>GREEN THEORY</h2>
+		     <p> 1234 4TH STREET NE, 98004</p>
+		  </li>
+		  <li class="store">
+		      <h2>GREEN THEORY</h2>
+		      <p> 1234 4TH STREET NE, 98004</p>
+		  </li>
+		  <li class="store">
+		      <h2>GREEN THEORY</h2>
+		      <p> 1234 4TH STREET NE, 98004</p>
+		  </li>
+		   <li class="store rightstore">
+		      <h2>orange THEORY</h2>
+		      <p> 1234 4TH STREET NE, 98004</p>
+		  </li>
+		</ul>
+	</div>
+</div>
+<div class="flightalerts">
+	<img class="footerlogo centerblock" src="jetcitylogo.svg">
+	<div id="alerts" class="centerblock">
+		<p id="leftfooter signup">SIGN UP FOR<br>FLIGHT ALERTS</p>
+		<p id="leftfooter youremail">EMAIL@WEBSITE.COM</p>
+	</div>
+</div>
+<div class="footer" id="flightinfo">
+		<div class="socialmediaicon iconone"></div>
+		<div class="socialmediaicon icontwo"></div>
+		<div class="socialmediaicon iconthree"></div>
+
+	<p id="leftfooter">HELLO@JETCITYGARDENS.COM</p>
+	<p id="rightfooter" class="topfooter">C. JET CITY GARDENS 2016</p>
+	<p id="rightfooter" class="bottomfooter">MADE BY NEARABOUT CREATIVE</p>
+</div>
+        <script type="text/javascript" src="js//on-screen.umd.min.js"></script>
+        <script type="text/javascript">
+            var os = new OnScreen();
+            </script>
+</body>
