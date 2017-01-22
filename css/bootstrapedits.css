@@ -1,0 +1,33 @@
+	#widthcap{
+		max-width: 1120px;
+		display: block;
+		margin: auto;
+		height: 1000px;
+	}
+	.thumbnail{
+		height: 15vw;
+	}
+	.col-md-4{
+		background-color: black;
+		background-clip: content-box;
+		height:250px;
+		  position: relative;
+	}
+	.row{
+		max-width: 1120px;
+		margin: auto;
+		margin-bottom:15px;
+		margin-top:15px;
+	}
+	div.caption h3,div.caption p{
+  transform: translateY(-50%);
+  text-align: center;
+	}
+	div.caption h3{
+	margin-top: 85px!important;
+	color: white!important;	
+	}
+	div.caption p{
+	margin-top: 15px!important;
+	color: white;	
+	}

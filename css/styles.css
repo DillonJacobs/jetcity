@@ -1,10 +1,11 @@
-*{
-	padding:0;
-	margin:0;
-}
+
+@media (min-width: 600px) {
+
 .header{
 height:105px;
-width:100%;	
+width:100%;
+margin: auto;
+max-width: 1400px;	
 }
 .flightattendant{
 height:805px;
@@ -24,16 +25,14 @@ background-color:red;
 	width:100%;
 	background-color:purple;
 }              
-.wherewefly{
+.whereweflycontainer{
 	width:auto;
 	margin-left:140px;
 	margin-right:140px;
 	background-color:white;
 }   
 .flightalerts{
-	height:630px;
-	width:100%;
-	background-color:gray;
+	height:605px;
 }
 .footer{
 	height:140px;
@@ -47,22 +46,7 @@ background-color:red;
 #rightfooter{
 	float:right;
 }
-ul.menu li a{
-	text-decoration: none;
-	color:black;
-}
-ul.menu{
-	list-style: none;
-	display:inline-block;
-	float:right;
-	margin-top:43.5px;
-	margin-right:70px;
-}
-ul.menu li{
-	float:left;
-	padding-left:17.5px;
-	padding-right:17.5px;
-}
+
 .fontfam{
 	font-family: ariel;
 }
@@ -75,34 +59,25 @@ ul.menu li{
 	width:420px;
 	padding-top:175px;
 }
-#alerts{
-width:525px;
-height:70px;
-background-color:orange;
-margin-top:50px;
-}
-.centerblock{
-	margin-left:auto;
-	margin-right:auto;
-	display:block;
-}
+
 #signup{
 	float:left;
-	padding-top:17px;
-	padding-bottom: 17px;
-background-color:black;
+	background-color:black;
 color:white;
-width:210px;
 }
 #youremail{
 	float:right;
 }
 .hometitle{
+	text-align:left;
 	margin-right:140px;
 	margin-left:210px;
 	padding-top:35px;
 	letter-spacing:5px;
 	font-size:38px;
+}
+.inflighttitle{
+	text-align:center;
 }
 .hometext{
 	margin-right:140px;
@@ -113,18 +88,17 @@ width:210px;
 	letter-spacing:2px;
 }
 .sixty{
+	line-height:normal;
 	position: absolute;
+	text-align:left;
 	font-size:260px;
 	margin-left:140px;
 	z-index:-1;
-	color:#F1F2F2;
 	margin-top:-127px;
+	width:200px;
 }
 .homehr{
-border-style:none;
-height:1px;
 width:105px;
-background-color:#006838;
 margin-top:140px;
 margin-left:210px;
 }
@@ -151,7 +125,7 @@ li.storeright{
 li.store h2, li.store p{
 	color:white;
 }
-#whereweflywidth{
+#whereweflywidthcap{
 	width:100%;
 	max-width:1120px;
 	margin-left:auto;
@@ -162,7 +136,7 @@ ul#lightSlider.lightSlider.lSSlide.lsGrab{
 	height:230px;
 	padding-top:70px;
 }
-.fly{
+.whereweflytitle{
 	position:absolute;
 	letter-spacing:5px;
 	font-size:38px;
@@ -173,33 +147,217 @@ li.store.lslide{
 	background-clip:content-box;
 }
 #leftfooter{
-float:left;
-clear:left;
-display:inline-block;	
+	float:left;
+	clear:left;
+	display:inline-block;
+	position:relative;
+	top:57.5px;
+	color:white;
+	margin-top:0;
+}
+.topfooter, .bottomfooter{}
+.socialmediaicon, #leftfooter{
+	left:70px;
 }
 .topfooter{
-	margin-top:34px;
+	top:22.5px;
+	position:relative;
+	color:white;
 }
 .bottomfooter{
+	top:39.5px;
+	position:relative;
 	clear:right;
+	color:white;
+}
+#rightfooter{
+	/* float:right; */
+	/* color:white; */
+}
+.footer p{
+	color:white;
+}
+.footer{
+	height:140px;
+	width:100%;
+	background-color:black;
+	display:inline-block;
+	padding-bottom:0px;
+	position: fixed;
+	display: block;
+	bottom: 0;
 }
 .socialmediaicon{
-	height:18px;
-	width:18px;
+	margin-right:10px;
+	margin-left:0px;
+	margin-top:0px;
+	top:42.5px;
 	display:inline-block;
 	float:left;
+
 }
-.iconone, .icontwo, .iconthree{
-	top:30;
-	position:relative;
-	background-color:white;
+.sixty{
+		margin-left:80px;
+	}
+	.homehr, .hometitle, .hometext{
+		margin-left:150px;
+	}
+	.hometext{
+		margin-right:150px;
+	}
+	#signup{
+	width:198px;
+	background-color:black;
+	color:white;
 }
-.iconone{
-	left:10;
+#youremail{
+width:312px;
+padding-top:6px;
 }
-.icontwo{
-	left:40;
+#iconcontainer{
+	height:0px;
+	margin-left:0px;
 }
-.iconthree{
-	left:70;
+.topfooter, .bottomfooter, #leftfooter{font-size:15px;}
+.topfooter, .bottomfooter, #leftfooter{
+	margin-left:0;
+	margin-right:0;
+	width:auto;
+	text-align:right;
+	margin-top:;
+}
+.potleaficon{
+	margin-left:135px;
+	height:280px;
+	position:absolute;
+	z-index: -1;       
+	margin-top:-127px;
+}
+#alerts{
+	width:510px;
+	/* box-sizing: content-box; */
+}
+
+
+
+.rowone, .rowtwo, .rowthree{
+	width:100%;
+	height:500px;
+	background-color:orange;
+	border-style:solid;
+	border-color:white;
+}
+
+
+
+#widthcap{
+width:100%;
+max-width:1400px;
+margin-left:auto;
+margin-right:auto;
+display:block;	
+}
+	.left, .middle, .right{
+	width:39%;
+	/* height:8px; */
+}
+.left{
+	float:left;
+	margin-left:5%;
+	margin-right:5%;
+	margin-left:;
+}
+.middle{
+	margin-left:5%;
+	margin-right:5%;
+	float:left;
+}
+.right{
+
+	margin-left:4.37500%;
+	margin-right:7.5%;
+float:left;
+}
+#sativaicon, #indicaicon, #hybridicon{
+	height:120px;
+	top:130px;
+}
+.strainame{
+	margin-top:70px;
+	margin-bottom:17.5px;
+}
+#iconholder{
+	margin-right:0;
+	margin-left:0;
+
+}
+}
+.bottomfooter{
+margin-top: -4px;
+}
+
+
+
+
+
+@media (min-width: 850px) {
+	.left, .middle, .right{
+	width:22.5%;
+}
+.left{
+	float:left;
+	margin-left:7.5%;
+	margin-right:4.37500%;
+	margin-left:;
+}
+.middle{
+	margin-left:4.37500%;
+	margin-right:4.37500%;
+	float:left;
+}
+.right{margin-left:4.37500%;margin-right:7.5%;float:left;}
+	.topfooter, #rightfooter{
+	}
+	.socialmediaicon, #leftfooter{
+		left:140px;
+	}
+	.sixty{
+		margin-left:140px;
+	}
+	.homehr, .hometitle, .hometext{
+		margin-left:210px;
+	}
+
+@media (min-width: 950px) {
+	ul.menu li a{
+	text-decoration: none;
+	color:black;
+}
+ul.menu{
+	list-style: none;
+	display:inline-block;
+	float:right;
+	margin-top:43.5px;
+	margin-right:70px;
+}
+ul.menu li{
+	float:left;
+	padding-left:17.5px;
+	padding-right:17.5px;
+}
+#trigger-overlay{
+	display:none;
+}
+}
+#onerr{
+	max-width:1400px;
+	width:100%;
+	height:1S30px;
+	margin:auto;
+
+}
+}
+.emailstyle{
+	width:auto;
+	display:inline; 
 }

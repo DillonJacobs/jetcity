@@ -1,0 +1,407 @@
+*{
+	padding:0;
+	margin:0;
+}
+.header{
+	height:105px;
+	width:100%;	
+}
+.flightattendant{
+	height:400px;
+	width:100%;
+	background-color:orange;
+}
+.textrow{
+	width:100%;
+	max-width:1400px;
+}
+.imagerow{
+	height:400px;	
+	background-color:red;
+}
+.inflightmenu{
+	height:805px;
+	width:100%;
+	background-color:purple;
+}   
+.logo{
+	width:167px;
+	margin-left:15px;
+	margin-top:30px;
+}  
+ul.menu{
+	display:none;
+} 
+@font-face {
+    font-family:garamond;
+    src: url(../AdobeGaramondProRegular.ttf);
+}
+@font-face {
+    font-family:miller;
+    src: url(../MillerDisplayRoman.ttf);
+}
+.millerreg{
+	font-family:miller;
+}
+.arialreg{
+	font-family:arial;
+}
+.garamondreg{
+	font-family:garamond;
+ }
+ .arialbold{
+	font-family:arial;
+	font-weight:bold;
+ }
+ .sixty{
+	font-size:60px;
+	line-height:40px;
+	margin-top:35px;  
+	text-align:center;
+	width:100%;
+	z-index:-1;
+}
+.lightgray{
+	color:#E6E7E8;
+}
+.hometitle, .whereweflytitle{
+	margin-right:15px;
+	margin-left:15px;
+	padding-top:10px;
+	letter-spacing:3px;
+	font-size:22px;
+	text-align:center;
+}
+.whereweflytitle{
+	text-align:left;
+	margin-left:0px;
+}
+.hometext{
+	margin-left:15px;
+	margin-right:15px;
+	padding-top:10px;
+	line-height:23px;
+	width:auto;
+	margin-bottom:35px;
+	font-size:;
+}
+.homehr{
+	border-style:none;
+	height:1px;
+	width:105px;
+	background-color:#006838;
+	margin-top:10px;
+	margin-right:auto;
+	margin-left:auto;
+}
+#whereweflywidthcap{
+	width:100%;
+	max-width:1120px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+.whereweflycontainer{
+	width:auto;
+	margin-left:15px;
+	margin-right:15px;
+	background-color:white;
+}
+ 
+.flyhr{
+	border-style:none;
+	height:1px;
+	width:105px;
+	background-color:#006838;
+	margin-top:35px;
+}
+/*----over riden styles for the lightslider function-----*/
+ul#lightSlider.lightSlider.lSSlide.lsGrab{
+	height:230px;
+	padding-top:70px;
+}
+li.store.lslide{
+	padding-right:25px;
+	box-sizing: content-box;
+	background-clip:content-box;
+}
+li.store{
+	width:100%!important;
+	height:280px!important;
+	max-height:280px;
+	background-color:black;
+}
+li.store h2, li.store p{
+	color:white;
+}
+a.lSNext{
+	right:0!important;
+	top:-15px!important;	
+}
+a.lSPrev{
+	right:45!important;
+	top:-15px!important;	
+}
+ul#lightSlider.lightSlider.lSSlide.lsGrab{
+	padding-top:0px;
+}
+.lSSlideOuter {
+	margin-top:-25px;
+}
+.lSSlideWrapper{
+	margin-top:30px;
+}
+li.store.leftstore.lslide{
+	margin-right:0px;
+	padding-right:0px;	
+}
+/*----end over riden styles for the lightslider function-----*/
+.potleaficon{
+	height:55px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:35px;
+}
+.centertext{
+	text-align:center;
+}
+.flightalerts{
+	height:345px;
+	width:100%;
+	background-color:gray;
+}
+
+.footerlogo{
+	width:215px;
+	padding-top:70px;
+}
+.centerblock{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+#alerts{
+	height:106px;
+	margin-top:50px;
+}
+
+.footer{
+	height:140px;
+	width:100%;
+	background-color:black;
+	display:block;
+	clear:both;
+}
+.socialmediaicon{
+	height:18px;
+	width:18px;
+	float:left;
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:35px; 
+}
+.iconone, .icontwo, .iconthree{
+	top:30;
+	position:relative;
+	background-color:white;
+}
+.iconone{
+	left:10;
+}
+.icontwo{
+	left:40;
+}
+.iconthree{
+	left:70;
+}
+#signup, #youremail{
+	margin-right:auto;
+	margin-left:auto;
+	text-align:center;
+}
+#signup{
+	height:44px;
+	padding-top:9px;
+	width:275px;
+	background-color:black;
+	color:white;
+	letter-spacing: 2px;
+	box-sizing: content-box;
+}
+#youremail{
+	height:47px;
+	width:275px;
+	background-color:white;
+	color:black;
+	box-sizing: content-box;	
+}
+#greenarrow{
+	font-size:30px;
+	font-family: arial;
+	padding-bottom:-10px;
+	color:#8DC63F;
+	top:4px;
+	margin-left:10px;
+	position: relative;
+
+}
+.socialmediaicon{
+}
+#iconcontainer{
+	width:84px;
+	height:18px;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+.white{
+	color:white;
+}
+.topfooter, .bottomfooter{
+	font-size:8px;
+}
+#leftfooter{
+	font-size:12px;
+	font-style: bold;
+	margin-top:55px;
+}
+.topfooter, .bottomfooter, #leftfooter{
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	width:80%;
+	text-align:center;
+}
+.topfooter, .bottomfooter{
+	margin-top:5px;
+}
+.footer{
+	height:140px;
+	padding-bottom:20px;
+}
+
+div#strainheader{
+	width:100%;
+	height:90px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: black;
+}
+ul.strainmenu{
+	text-align: center;
+	color:#6D6E71;
+}
+ul.strainmenu li {
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:36px;
+	margin-bottom:36px;
+	display: inline-block;
+}
+.strainame{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:35px;
+	display:block;
+	text-align:center;
+	letter-spacing: 3px
+}
+#sativaicon, #indicaicon, #hybridicon{
+	height:40px;
+	position:absolute;
+	right:20px;
+	top:90px;
+}
+ul.strainmenu li{
+	font-size:15px;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+.strainpicture{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:70px;
+	display:block;
+	left:-37px;
+	width:90%;
+}
+#trigger-overlay{
+position: absolute;
+right:20px;
+top:47px;
+border-style: none;
+font-size:15px;
+background-color:transparent;
+}
+
+.strainpagepicture{
+position:absolute;
+width:260px;
+height:auto;
+top:260px;
+margin-right:60px;
+}
+#lowercontainer{
+	width:340px;
+	margin-left:auto;
+	margin-right: -15%;
+	display:block;
+	overflow:auto;
+}
+.straincontainer{
+	width:90%;
+	max-width:700px;
+	clear:both;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:455px;
+	position:relative;
+	display:block;
+}
+.straintitle, .straintype{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+.straininforight{
+float:left;
+clear:right;	
+margin-top:31px;
+max-width:240px;
+}
+.strainjar{
+	position:absolute;
+	margin-top:70px;
+	width:245px;
+}
+.strainicon{
+	float:left;
+	vertical-align: middle;
+	margin-top:14px;
+	padding-right:30px;
+}
+.infocontainer{
+	clear:both;
+	height:80px;
+}
+.strainpagepicture{
+	height:160px;
+	position:absolute;
+}
+.first{
+margin-top:400px;	
+}
+.strainnav{
+}
+#jarandnugcontainer{
+	width:300px;
+	height:10px;
+	margin:auto;}
+#iconholder{
+	height:10px;
+	width:84px;
+	margin-right:auto;
+	margin-left:auto;
+
+}

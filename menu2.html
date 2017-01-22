@@ -1,0 +1,170 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="css/mobilestyles.css" />
+    <link type="text/css" rel="stylesheet" href="css/tabletstyles.css" />
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+	<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/popupstyle.css">         
+<style>
+button{
+	  background-color: transparent; /* Green */
+    border: none;
+    color: #6D6E71;;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 500;
+ -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+button:hover{
+cursor: pointer;
+}
+button:focus{
+outline: none;
+}
+button.control.mixitup-control-active{
+	color:#8dc63f;
+}
+html {
+  overflow-y: scroll;
+}
+div.container{
+	mix-height:;
+}
+#sativaicon{
+opacity: 0;	
+}
+</style>
+<script type="text/javascript">
+	 $(document).ready(function () {
+	 	$( "#sativabutton" ).click(function() {
+			if ($("#sativabutton").hasClass("mixitup-control-active")) {
+				alert("Hello! I am an alert box!!");
+				$("#sativaicon").animate({opacity: 1.0}, 200);
+			}
+		});
+		});
+</script>
+</head>
+<body>
+	<div class="header">
+	<a href="home.html"><img class="logo" src="jetcitylogo.svg"></a>
+		<ul class="menu">
+			<li><a class="arialbold" href="">THE CURE</a></li>
+			<li><a class="arialbold" href="">IN-FLIGHT MENU</a></li>
+			<li><a class="arialbold" href="">WHERE WE FLY</a></li>
+			<li><a class="arialbold" href="">FLIGHT INFO</a></li>
+		</ul>
+		<!--MOBILE MENU-->
+		<button id="trigger-overlay" class="arialbold" type="button">
+			MENU
+		</button>
+      <div class="overlay overlay-scale">
+      <button type="button" class="overlay-close fade">
+      	Close
+      </button>
+      <div class="info">
+        <div id="hamdiv">
+          <a id="hammenu" class="blacktext quickfade" href="#graybox">ABOUT</a>
+          <a id="hammenu" class="blacktext quickfade" href="work.html">WORK</a>
+          <a id="hammenu" class="blacktext quickfade" href="#footer">CONTACT</a>
+        </div>
+      </div>
+  </div>
+	</div>
+	<div class="controls" id="strainheader">
+		<ul class="strainmenu">
+			<li class="arialbold"><button type="button" class="control arialbold" data-filter="all">All</button></li>
+			<li class="arialbold"><button id="sativabutton" type="button" class="control" data-filter=".sativa">SATIVA</button></li>
+			<li class="arialbold"><button type="button" class="control" data-filter=".indica">INDICA</button></li>
+			<li class="arialbold"><button type="button" class="control" data-filter=".hybrid">HYBRID</button></li>
+	
+		</ul>
+	
+	</div>
+
+	<div class="container" id="widthcap">
+	<img class="mix sativa" id="sativaicon" src="img/sativaplane.png">
+	<img class="mix indica" id="indicaicon" src="img/indicaplane.png">
+	<div class="left mix hybrid">
+			<p class="strainame arialbold">White Urkle</p>
+			<a href="strain9.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="middle mix hybrid">
+			<p class="strainame arialbold">Sorcerer’s Apprentice</p>
+			<a href="strain9.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="right mix hybrid">
+			<p class="strainame arialbold">Skywalker OG Kush</p>
+			<a href="strain9.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="left mix sativa">
+			<p class="strainame arialbold">Dream Beaver</p>
+			<a href="strain1.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="middle mix sativa">
+			<p class="strainame arialbold">Sour Diesel</p>
+			<a href="strain2.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="right mix sativa">
+			<p class="strainame arialbold">Super Lemon Haze</p>
+			<a href="strain3.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="left mix indica">
+			<p class="strainame arialbold">Rocklock</p>
+			<a href="strain7.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="middle mix indica">
+			<p class="strainame arialbold">Three Queens</p>
+			<a href="strain8.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="right mix indica">
+			<p class="strainame arialbold">Hulkamania</p>
+			<a href="strain6.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="left mix sativa">
+			<p class="strainame arialbold">Super Silver Haze</p>
+			<a href="strain4.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		<div class="middle mix sativa">
+			<p class="strainame arialbold">Blue Dream 88</p>
+			<a href="strain5.html"><img class="strainpicture" src="nug1.png"></a>
+		</div>
+		</div>
+    <div class="footer" id="flightinfo">
+    <div id="onerr">
+    <div id="iconcontainer">
+        <div class="socialmediaicon iconone"></div>
+        <div class="socialmediaicon icontwo"></div>
+        <div class="socialmediaicon iconthree"></div>
+        </div>
+        <p id="leftfooter" class="arialreg white">HELLO@JETCITYGARDENS.COM</p>
+        <p id="rightfooter" class="right topfooter arialreg white">C. JET CITY GARDENS 2016</p>
+        <p id="rightfooter" class="right bottomfooter arialreg white">MADE BY NEARABOUT CREATIVE</p>
+    </div>
+    </div>
+
+<script src="js/mixitup.min.js"></script>
+
+<script>
+		var containerEl = document.querySelector('.container');
+		var imgEl = document.querySelector('img#sativaicon.mix.sativa');
+		var mixer = mixitup(containerEl, {
+	    animation: {
+	        enable: true
+	    }
+	})
+	    var mixer = mixitup(imgEl, {
+	    animation: {
+	        enable: false
+	    }
+	});
+	   
+</script>
+<script src="js/index.js"></script>
+</body>
+</html>
